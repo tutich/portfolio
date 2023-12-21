@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+
+import aboutPic from '../images/20231221_201709.jpg'
 
 function About() {
     return (
@@ -12,6 +14,7 @@ function About() {
             The ever-evolving nature of web development keeps me hooked. I'm on a constant quest to learn, adapt, and embrace emerging trends to stay at the forefront of the digital landscape.
             Whether you're a fellow developer, a designer with a vision, or a business looking to enhance its online presence, I'm always up for exciting collaborations. Let's turn ideas into reality!
             </p>
+            <img src={aboutPic}/>
         </div>
     )
 }
