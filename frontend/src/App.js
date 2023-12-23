@@ -7,10 +7,12 @@ import Resume from './components/Resume';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />}></Route>

@@ -2,7 +2,7 @@
 
 function Resume() {
     return (
-        <>Resume</>
+        <div>Resume</div>
     )
 }
 

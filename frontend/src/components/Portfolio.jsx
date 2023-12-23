@@ -2,7 +2,7 @@
 
 function Portfolio() {
     return (
-        <>Portfolio</>
+        <div>Portfolio</div>
     )
 }
 
