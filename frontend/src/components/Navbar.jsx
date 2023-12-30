@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {FaReact} from 'react-icons/fa';
 import { useState } from "react";
 
@@ -42,7 +42,7 @@ const data = [
 
 
 
-function Navbar () {
+function Navbar (to) {
 const [toggleIcon, setToggleIcon] = useState(false);
 
 const handleToggleIcon = () => {
@@ -54,15 +54,13 @@ const handleToggleIcon = () => {
         <div>
             <nav>
                 <div>
-                    <BrowserRouter>
-                        <Link to={'/'}>
-                        <FaReact size={30}/>
-                        </Link>
-                    </BrowserRouter>
+                    {/* <Link to={'/'}>
+                    <FaReact size={30}/>
+                    </Link> */}
                 </div>
                         
                 <ul>
-                    {/* {
+                    {
                         data.map((item, key) => (
                             <li key={key}>
                                 <Link to={item.to}>
@@ -70,7 +68,8 @@ const handleToggleIcon = () => {
                                 </Link>
                             </li>
                         ))
-                    } */}
+                    }
+                    
                 </ul>
                 <div className="nav-icon" onClick={handleToggleIcon}>
                 </div>
