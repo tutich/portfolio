@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Resume from './components/Resume';
@@ -12,8 +12,8 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter><Navbar/></BrowserRouter>
-      <BrowserRouter>
+      <Navbar/>
+      
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
@@ -22,7 +22,7 @@ function App() {
         <Route path='/skills' element={<Skills />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
       </Routes>
-      </BrowserRouter>
+      
     </div>
   );
 }

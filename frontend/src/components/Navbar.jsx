@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {FaReact} from 'react-icons/fa';
+import {FaReact, FaBars} from 'react-icons/fa';
+import {HiX, hiX} from 'react-icons/hi'
 import { useState } from "react";
 
 const data = [
@@ -72,6 +73,7 @@ const handleToggleIcon = () => {
                     
                 </ul>
                 <div className="nav-icon" onClick={handleToggleIcon}>
+                    {toggleIcon ? <HiX size={30}/> : <FaBars size={30}/>}
                 </div>
             </nav>
         </div>
