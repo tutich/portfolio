@@ -15,8 +15,41 @@ img {
   width: 400px;
   border-radius: 50%;
 }
-.skills {
-  
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+}
+nav a {
+  text-decoration: none; /* Remove underline */
+  margin-right: 15px; /* Adjust spacing between links */
+}
+.dataa {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: ;
+}
+.nav-icon {
+  padding: 10px;
+  display: none;
+}
+nav a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Initial state - no underline */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+  transform: scaleX(1); /* Fully underline on hover */
+  transform-origin: bottom left;
 }
 
 @media only screen and (max-width : 768px){

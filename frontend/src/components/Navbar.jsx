@@ -60,7 +60,7 @@ const handleToggleIcon = () => {
                     </Link> */}
                 </div>
                         
-                <ul>
+                <ul className="dataa">
                     {
                         data.map((item, key) => (
                             <li key={key}>
