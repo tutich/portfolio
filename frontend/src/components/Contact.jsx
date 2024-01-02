@@ -20,20 +20,21 @@ function Contact() {
                     placeholder="Email"
                     type="email"
                     />
-                    <input
+                    <textarea
                     placeholder="Say Something"
                     type="text"
-                    />
-                                   <input
+                    rows="10" cols="40"
+                    ></textarea>
+                    <input
                     type="Submit"
                     />
                 </form>
             </div>
-            <div>
-                <a href='https://www.instagram.com/'><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
-                <a href='https://twitter.com/home'><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
-                <a href='https://www.linkedin.com'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-                <a href='https://github.com/tutich'><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+            <div className='linkss'>
+                <a className='insta' href='https://www.instagram.com/'><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+                <a className='insta' href='https://twitter.com/home'><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+                <a className='insta' href='https://www.linkedin.com'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                <a className='insta' href='https://github.com/tutich'><FontAwesomeIcon icon={faGithub} size="2x" /></a>
             </div>
         </div>
     )

@@ -53,12 +53,12 @@ function Skills() {
     return (
         <div className='skills'>
             <h2>My Skills</h2>
-            <>
+            <div className='skill'>
             {
                 skillsData.map((item, i) => (
                     <div key={i}>
                         <h3>{item.label}</h3>
-                        <div>
+                        <div >
                             {
                                 item.data.map((skillItem, j) => (
                                     <div key={j}>
@@ -66,7 +66,7 @@ function Skills() {
                                       <Line
                                         percent={skillItem.percentage}
                                         strokeWidth='2'
-                                        strokeColor='yellow'
+                                        strokeColor='hsl(278, 68%, 11%)'
                                         trailWidth={'2'}
                                         strokeLineCap='square'
                                       />
@@ -77,7 +77,7 @@ function Skills() {
                     </div>
                 ))
             }
-            </>
+            </div>
         </div>
     )
 }
