@@ -5,10 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: hsl(270, 3%, 87%);
 }
 
 .about {
  display: flex;
+ justify-content: space-between;
+ margin:  ;
+ padding: ;
+ width: 70%;
+ place-items: center;
 }
 img {
   height: 400px;
@@ -23,35 +29,85 @@ nav {
 nav a {
   text-decoration: none; /* Remove underline */
   margin-right: 15px; /* Adjust spacing between links */
+  padding: 0.5rem;
 }
 .dataa {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding: ;
+  padding: 10px;
 }
 .nav-icon {
-  padding: 10px;
   display: none;
 }
-nav a::before {
+nav a::after {
   content: '';
-  position: absolute;
-  width: 100%;
+  display: block;
   height: 2px;
-  background-color: white;
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0); /* Initial state - no underline */
-  transform-origin: bottom right;
-  transition: transform 0.3s ease;
+  width: 0;
+  background: transparent;
+  /* transform: scaleX(0); 
+  transform-origin: bottom right; */
+  transition: all 0.4s ease;
 }
 
-nav a:hover::before {
-  transform: scaleX(1); /* Fully underline on hover */
-  transform-origin: bottom left;
+nav a:hover::after {
+  /* transform: scaleX(1); 
+  transform-origin: bottom left; */
+  width: 100%;
+  background: hsl(278, 68%, 11%);
+}
+.aboutdes {
+  background: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)) ;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: ;
+  
+} 
+form {
+  display: grid;
+  grid-auto-flow: row;
+  width: 30%;
+  margin: 0 auto;
+  padding: 30px;
+}
+input {
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.name {
+  padding: ;
+}
+input[type="submit"] {
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  cursor: pointer;
 }
 
 @media only screen and (max-width : 768px){
+  .dataa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.4 ease;
+
+    &.active {
+      background: black;
+      opacity: 1;
+      left: 0px;
+    }
+  }
+  .nav-icon {
+    display: block;
+    cursor: pointer;
+  }
 
 }

@@ -14,6 +14,7 @@ function Contact() {
                     <input
                     placeholder="Name"
                     type="text"
+                    className='name'
                     />
                     <input
                     placeholder="Email"
