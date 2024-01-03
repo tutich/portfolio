@@ -18,7 +18,7 @@ const handleHomeContact = () => {
               <h2>Front End Developer</h2>
               <div>
                 <button className='home-cont-butn' onClick={handleHomeContact}>Hire me</button>
-               <button>Download my Resume</button>
+               <button className='resum'>Download my Resume</button>
               </div>
             </div>
             <div class="intropic"><img src={homPic} alt=''/></div>

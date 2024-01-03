@@ -10,6 +10,13 @@ body {
   justify-content: space-between;
   margin: 0 auto;
 }
+.resum {
+  background: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
 .about {
  display: flex;
