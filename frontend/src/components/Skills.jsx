@@ -65,9 +65,9 @@ function Skills() {
                                       <p>{skillItem.skillName}</p>
                                       <Line
                                         percent={skillItem.percentage}
-                                        strokeWidth='2'
+                                        strokeWidth='7'
                                         strokeColor='hsl(278, 68%, 11%)'
-                                        trailWidth={'2'}
+                                        trailWidth={'7'}
                                         strokeLineCap='square'
                                       />
                                     </div>

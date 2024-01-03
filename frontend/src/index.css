@@ -22,6 +22,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   position: sticky;
+  font-weight: 550;
 }
 nav a {
   text-decoration: none; /* Remove underline */
@@ -97,8 +98,13 @@ input[type="submit"]:hover {
 .skill {
   display: grid;
   grid-auto-flow: column;
-  width: 100%;
-  padding: 10px;
+  width: 90%;
+  padding: 14px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width : 768px){
