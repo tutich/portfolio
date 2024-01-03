@@ -16,7 +16,7 @@ const handleHomeContact = () => {
             <div class="intro">
               <h2>Hey, I'm Peter.</h2>
               <h2>Front End Developer</h2>
-              <div>
+              <div className='btns'>
                 <button className='home-cont-butn' onClick={handleHomeContact}>Hire me</button>
                <button className='resum'>Download my Resume</button>
               </div>

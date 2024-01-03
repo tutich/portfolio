@@ -8,7 +8,8 @@ body {
 .hom {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  place-content: center;
+  place-items: center;
 }
 .resum {
   background: hsl(278, 68%, 11%);
@@ -17,19 +18,37 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
+.home-cont-butn {
+  background: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  padding: 6px;
+  width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.intro {
+  padding-right: 20px;
+}
+.intropic {
+  
+}
+.btns {
+  padding: 10px;
+}
 
 .about {
  display: flex;
  justify-content: space-between;
- margin:  ;
- padding: ;
- width: 70%;
- place-items: center;
+ place-content: center;
+  place-items: center;
 }
 img {
   height: 400px;
   width: 400px;
   border-radius: 50%;
+  border: 5px solid hsl(278, 94%, 30%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 nav {
   display: flex;
@@ -70,10 +89,13 @@ nav a:hover::after {
 }
 .aboutdes {
   background: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)) ;
+  color: hsl(270, 30%, 87%);
   box-sizing: border-box;
   border-radius: 10px;
-  padding: ;
-  
+  margin-right: 30px;
+  width: 40%;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 } 
 form {
   display: grid;
@@ -88,9 +110,12 @@ input {
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 textarea {
   margin-bottom: 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .insta {
   padding: 6px;
@@ -118,6 +143,7 @@ input[type="submit"]:hover {
   border-radius: 8px;
   justify-content: space-evenly;
   margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width : 768px){

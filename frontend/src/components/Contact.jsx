@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 
 
 function Contact() {
+
+    const emailAddress = 'pkoinange02@gmail.com';
     return (
         <div>
             <h3>Let's Talk</h3>
@@ -35,6 +37,7 @@ function Contact() {
                 <a className='insta' href='https://twitter.com/home'><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
                 <a className='insta' href='https://www.linkedin.com'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
                 <a className='insta' href='https://github.com/tutich'><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+                {/* <a href={`mailto:${emailAddress}`}>{emailAddress}</a> */}
             </div>
         </div>
     )
