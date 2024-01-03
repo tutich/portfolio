@@ -5,6 +5,12 @@ body {
   color: ;
 }
 
+.hom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 .about {
  display: flex;
  justify-content: space-between;

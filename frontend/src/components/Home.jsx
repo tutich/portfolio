@@ -12,13 +12,19 @@ const handleHomeContact = () => {
 
     return (
         <div className=''>
-          <h2>Hey, I'm Peter.</h2>
-          <h2>Front End Developer</h2>
-          <img src={homPic} alt=''/>
-
-          <div>
-            <button className='home-cont-butn' onClick={handleHomeContact}>Hire me</button>
+          <div class="hom">
+            <div class="intro">
+              <h2>Hey, I'm Peter.</h2>
+              <h2>Front End Developer</h2>
+              <div>
+                <button className='home-cont-butn' onClick={handleHomeContact}>Hire me</button>
+               <button>Download my Resume</button>
+              </div>
+            </div>
+            <div class="intropic"><img src={homPic} alt=''/></div>
           </div>
+
+          
         </div>
         
 
