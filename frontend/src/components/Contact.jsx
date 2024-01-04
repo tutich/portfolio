@@ -10,7 +10,7 @@ function Contact() {
     const emailAddress = 'pkoinange02@gmail.com';
     return (
         <div>
-            <h3>Let's Talk</h3>
+            <h2>Let's Talk</h2>
             <div>
                 <form action="">
                     <input

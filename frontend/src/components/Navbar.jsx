@@ -60,7 +60,7 @@ const handleToggleIcon = () => {
                     </Link> */}
                 </div>
                         
-                <ul className={'dataa ${toggleIcon ? "active" : ""}'}>
+                <ul className={`dataa ${toggleIcon ? "active" : ""}`}>
                     {
                         data.map((item, key) => (
                             <li key={key}>

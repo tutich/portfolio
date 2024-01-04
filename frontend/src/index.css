@@ -11,6 +11,9 @@ body {
   place-content: center;
   place-items: center;
 }
+h2 {
+  animation: typingEffectAnimation 2.5s steps(30, end);
+}
 .resum {
   background: hsl(278, 68%, 11%);
   color: hsl(0, 0%, 100%);
@@ -164,9 +167,20 @@ input[type="submit"]:hover {
       left: 0px;
     }
   }
+  .me {
+    left: 20px;
+  }
   .nav-icon {
     display: block;
     cursor: pointer;
   }
 
+}
+@keyframes typingEffectAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
