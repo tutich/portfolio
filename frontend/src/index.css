@@ -156,7 +156,7 @@ input[type="submit"]:hover {
     justify-content: center;
     width: 100%;
     position: absolute;
-    top: 80px;
+    top: 20px;
     left: -110%;
     opacity: 1;
     transition: all 0.4 ease;
@@ -173,8 +173,27 @@ input[type="submit"]:hover {
   .nav-icon {
     display: block;
     cursor: pointer;
+    position: ;
   }
-
+  .hom {
+    display: flex;
+    flex-direction: column;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutdes {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .aboutpic {
+    margin: 4px;
+  }
+ .skill {
+  display: flex;
+  flex-direction: column;
+ }
 }
 @keyframes typingEffectAnimation {
   from {
