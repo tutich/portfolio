@@ -1,7 +1,27 @@
+:root {
+  --color-bg:#1f1f38;
+  --color-bg-variant:#2c2c6c;
+  --color-primary:#4db5ff;
+  --color-primary-variant:rgba(77, 181, 255, 0.4);
+  --color-white:#fff;
+  --color-light:rgba(77, 181, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+}
+
+
+
+
 body {
   margin: 0;
   font-family: 'Space Grotesk', sans-serif;
-  background: hsl(270, 3%, 87%);
+  /* background: hsl(270, 3%, 87%); */
+  background: #1f1f38;
   color: ;
 }
 
@@ -91,7 +111,7 @@ nav a:hover::after {
   background: hsl(278, 68%, 11%);
 }
 .aboutdes {
-  background: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)) ;
+  background: #2c2c6c;
   color: hsl(270, 30%, 87%);
   box-sizing: border-box;
   border-radius: 10px;
