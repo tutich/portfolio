@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Animate } from "react-simple-animate";
 import homPic from '../images/20231221_212926.jpg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function Home() {
     const navigate = useNavigate();
@@ -35,7 +36,7 @@ const handleHomeContact = () => {
                 </Animate>
               </div>
             </div>
-            <div class="intropic"><img src={homPic} alt=''/></div>
+            {/* <div class="intropic"><img src={homPic} alt=''/></div> */}
           </div>
 
           

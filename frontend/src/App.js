@@ -22,6 +22,7 @@ function App() {
         <Route path='/skills' element={<Skills />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
       </Routes>
+     
       
     </div>
   );

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import {FaReact, FaBars} from 'react-icons/fa';
 import {HiX, hiX} from 'react-icons/hi'
 import { useState } from "react";
+import homPic from '../images/20231221_212926.jpg'
+import aboutPic from '../images/20231221_201709.jpg'
 
 const data = [
     {
@@ -53,13 +55,10 @@ const handleToggleIcon = () => {
 
     return (
         <div>
+            
             <nav>
-                <div>
-                    {/* <Link to={'/'}>
-                    <FaReact size={30}/>
-                    </Link> */}
-                </div>
-                        
+            
+            <div className="aboutpic"><img src={aboutPic}/></div>        
                 <ul className={`dataa ${toggleIcon ? "active" : ""}`}>
                     {
                         data.map((item, key) => (
